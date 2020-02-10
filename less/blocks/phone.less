@@ -1,0 +1,44 @@
+.phone {
+  text-align: right;
+}
+
+.phone__link {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #E02030;
+    .transition();
+  }
+}
+
+.phone__call {
+  position: relative;
+  padding-left: 20px;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.6);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    background-image: url(../../img/icons/phone.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
