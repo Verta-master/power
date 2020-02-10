@@ -435,7 +435,8 @@ button {
 }
 h1,
 h2,
-h3 {
+h3,
+title {
   font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
 }
@@ -495,7 +496,8 @@ h3 {
   font-size: 16px;
   color: #4D4D4D;
   background-color: #FFFFFF;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
+  border-radius: 25px;
 }
 .btn--white::after {
   content: "";
@@ -529,6 +531,38 @@ h3 {
   height: 21px;
   margin-right: 13px;
   stroke: #fff;
+}
+.link {
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #E02030;
+  line-height: 1;
+  border: 2px solid #E02030;
+  border-radius: 20px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #FFFFFF;
+  background-color: #E02030;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.link--right {
+  float: right;
 }
 .header {
   padding-top: 12px;
@@ -725,4 +759,27 @@ h3 {
   color: #FFFFFF;
   background-color: #E02030;
   border-radius: 50%;
+}
+.promo {
+  width: 100%;
+  min-height: 633px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.promo .title {
+  line-height: 70px;
+}
+.promo__info {
+  max-width: 500px;
+  padding-top: 80px;
+  color: #fff;
+}
+.promo__btn {
+  margin-top: 56px;
+}
+.promo__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
 }
