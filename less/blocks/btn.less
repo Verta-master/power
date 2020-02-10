@@ -28,7 +28,8 @@
     font-size: 16px;
     color: #4D4D4D;
     background-color: #FFFFFF;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
+    border-radius: 25px;
     
     &::after {
       content: "";
@@ -64,5 +65,32 @@
     height: 21px;
     margin-right: 13px;
     stroke: #fff;
+  }
+}
+
+.link {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #E02030;
+  line-height: 1;
+  border: 2px solid #E02030;
+  border-radius: 20px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #FFFFFF;
+    background-color: #E02030;
+    .transition();
+  }
+  
+  &--right {
+    float: right;
   }
 }
