@@ -1,3 +1,144 @@
 .product {
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+.product__slider-wrap {
+  position: relative;
+}
+
+.product__prev,
+.product__next {
+  width: 60px;
+  height: 60px;
+  background-color: #FFFFFF;
+  border: 2px solid #D8D8D8;
+  background-image: url(../img/icons/next.svg);
+  background-repeat: no-repeat;
+  background-size: 13px 22px;
+  background-position: center;
+  border-radius: 50%;
+  outline: none;
+}
+
+.product__prev {
+  left: -130px;
+  transform: rotate(180deg);
+}
+
+.product__next {
+  right: -130px;
+}
+
+.product__slide {
+  position: relative;
+}
+
+.product__label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  padding: 10px 6px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background-image: linear-gradient(92.65deg, #FFAA01 1.57%, #FDD300 98.09%);
   
+  &--new {
+    background-image: linear-gradient(90deg, #21D329 0%, #7AD321 100%);
+  }
+}
+
+.product__img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    max-height: 100%;
+  }
+}
+
+.product__link {
+  display: block;
+}
+
+.product__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.product__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product__basket {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #E02030;
+  background-image: url(../img/icons/basket.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px 20px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: rgba(224,32,48,0.7);
+    .transition();
+  }
+}
+
+.product__price {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.product__value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+  color: #E02030;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  border: 1px solid #BFBFBF;
+  border-radius: 50%;
+  
+  &--minus {
+    font-size: 26px;
+  }
+}
+
+.product__number {
+  display: block;
+  width: 36px;
+  height: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
 }
