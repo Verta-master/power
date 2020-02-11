@@ -1,0 +1,47 @@
+.certificate {
+  background-color: #EEEEEE;
+  
+  .title {
+    margin-top: 0;
+    line-height: 68px;
+  }
+  
+  .wrapper {
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 90px;
+  }
+}
+
+.certificate__info {
+  max-width: 450px;
+}
+
+.certificate__img {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  
+  img {
+    display: block;
+  }
+}
+
+.certificate__btn {
+  position: relative;
+  z-index: 5;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 25px;
+    left: 0;
+    right: 0;
+    height: 36px;
+    background: #E02030;
+    opacity: 0.3;
+    filter: blur(50px);
+    border-radius: 25px;
+  }
+}
