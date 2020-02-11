@@ -16,50 +16,52 @@
       <div class="logo">
         <img src="img/images/logo.png" alt="Logo">
       </div>
-      <a href="#" class="btn btn--catalog">
-        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
-          <rect x="12.8696" y="11.9565" width="7.13043" height="7.13043" rx="1"></rect>
-          <rect x="12.8696" y="1" width="7.13043" height="7.13043" rx="1"></rect>
-          <rect x="1" y="11.9565" width="7.13043" height="7.13043" rx="1"></rect>
-          <rect x="1" y="1" width="7.13043" height="7.13043" rx="1"></rect>
-        </svg>
-        <span>каталог</span>
-      </a>
-      <nav class="menu">
-        <button type="button" class="menu__btn">
-          <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
-            <rect y="14" width="20" height="2"></rect>
-            <rect y="7" width="20" height="2"></rect>
-            <rect width="20" height="2"></rect>
+      <div class="header__btns">
+        <a href="#" class="btn btn--catalog">
+          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" stroke-width="2" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12.8696" y="11.9565" width="7.13043" height="7.13043" rx="1"></rect>
+            <rect x="12.8696" y="1" width="7.13043" height="7.13043" rx="1"></rect>
+            <rect x="1" y="11.9565" width="7.13043" height="7.13043" rx="1"></rect>
+            <rect x="1" y="1" width="7.13043" height="7.13043" rx="1"></rect>
           </svg>
-          <span>Меню</span>
-        </button>
-        <div class="menu__drop">
-          <ul class="menu__list">
-            <li class="menu__item menu__item--active">
-              <a href="#" class="menu__link">О нас</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Новости</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Преимущества</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Доставка и оплата</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Партнёры</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link">Оптовикам</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+          <span>каталог</span>
+        </a>
+        <nav class="menu">
+          <button type="button" class="menu__btn">
+            <svg width="20" height="16" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg">
+              <rect y="14" width="20" height="2"></rect>
+              <rect y="7" width="20" height="2"></rect>
+              <rect width="20" height="2"></rect>
+            </svg>
+            <span>Меню</span>
+          </button>
+          <div class="menu__drop">
+            <ul class="menu__list">
+              <li class="menu__item menu__item--active">
+                <a href="#" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Новости</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Преимущества</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Доставка и оплата</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Партнёры</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Оптовикам</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <div class="phone">
         <a href="tel:+78002013368" class="phone__link">8 800 201-33-68</a>
         <a data-fancybox="" data-src="#call" href="javascript:;" class="phone__call">обратный звонок</a>
@@ -477,6 +479,7 @@
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
@@ -493,13 +496,13 @@
       slidesPerView: 4,
       spaceBetween: 57,
       breakpoints: {
-        1022: {
+        1200: {
           slidesPerView: 3,
         },
-        766: {
+        1022: {
           slidesPerView: 2,
         },
-        480: {
+        600: {
           slidesPerView: 1,
         },
       },
