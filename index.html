@@ -121,7 +121,7 @@
                     <img src="img/images/card.jpg" alt="Манго">
                   </figure>
                   <p class="product__title">Манго</p>
-                  <p>Освежающий фруктовый вкус и аромат спелого и сочного манго...</p>
+                  <p>Освежающий фруктовый вкус</p>
                 </a>
                 <form action="#" class="product__form">
                   <div class="product__btns">
@@ -391,7 +391,7 @@
     <section class="certificate">
       <div class="wrapper">
         <div class="certificate__info">
-          <p class="title">Сертификаты на продукцию</p>
+          <p class="title">Сертификаты<br>на продукцию</p>
           <a href="#" class="btn certificate__btn">Подробнее</a>
         </div>
         <figure class="certificate__img">
@@ -446,7 +446,7 @@
         </div>
         <div class="phone">
           <a href="tel:+78002013368" class="phone__link">8 800 201-33-68</a>
-          <a data-fancybox="" data-src="#call" href="javascript:;" class="phone__call">обратный звонок</a>
+          <a data-fancybox="" data-src="#access" href="javascript:;" class="phone__call">обратный звонок</a>
         </div>
       </div>
     </div>
@@ -454,7 +454,26 @@
   
   <!-- Modal windows -->
   <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Оставьте Ваши имя и номер и мы ответим на все интересующие вас вопросы!</p>
+    <form action="#" class="form">
+      <label for="name" class="form__label">Имя</label>
+      <input type="text" id="name" class="form__input">
+      <label for="phone" class="form__label">Номер телефона</label>
+      <input type="text" id="phone" class="form__input">
+      <input type="checkbox" id="checkbox" class="form__checkbox">
+      <label for="checkbox" class="form__checkbox-label">Я не робот</label>
+      <button type="submit" class="btn form__btn">заказать звонок</button>
+      <p class="form__comment">Ознакомлен с <a href="#">политикой конфиденциальности</a>.</p>
+    </form>
+  </div>
   
+  <div style="display: none;" id="access" class="access">
+    <p class="access__title">Для доступа<br>на сайт вы должны быть<br>старше 18 лет.</p>
+    <p>Пожалуйста, подтвердите свой возраст перед входом на сайт!</p>
+    <div class="access__btns">
+      <a href="#" class="btn access__btn">я старше 18 лет</a>
+      <a href="#" class="btn btn--white access__btn">я младше 18 лет</a>
+    </div>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
