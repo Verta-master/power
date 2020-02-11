@@ -491,7 +491,7 @@ h3 {
 }
 .btn--white {
   position: relative;
-  z-index: 1;
+  z-index: 5;
   width: 220px;
   height: 50px;
   font-weight: bold;
@@ -754,7 +754,7 @@ h3 {
   left: 0;
   width: 11px;
   height: 11px;
-  background-image: url(../../img/icons/phone.svg);
+  background-image: url(../img/icons/phone.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
