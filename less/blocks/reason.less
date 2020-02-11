@@ -1,6 +1,7 @@
 .reason {
   position: relative;
   padding-top: 70px;
+  padding-bottom: 20px;
   background-image: url(../img/images/logo-bg.svg);
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -25,13 +26,14 @@
 .reason__img {
   position: absolute;
   left: 0;
-  bottom: 90px;
+  bottom: 80px;
 }
 
 .reason__list {
   .reset();
   list-style: none;
-  width: 60%;
+  width: 62.5%;
+  padding-top: 5px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -39,9 +41,18 @@
 }
 
 .reason__item {
-  width: 280px;
+  width: 270px;
   margin-right: 60px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
+  
+  p {
+    margin: 0;
+  }
+  
+  .reason__title {
+    margin-top: 20px;
+    margin-bottom: 4px;
+  }
 }
 
 .reason__icon {
@@ -57,8 +68,6 @@
 }
 
 .reason__title {
-  margin-top: 20px;
-  margin-bottom: 4px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;

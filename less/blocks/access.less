@@ -1,0 +1,61 @@
+.access {
+  position: relative;
+  width: 630px;
+  max-width: 100%;
+  padding: 40px;
+  padding-top: 160px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  background-color: #1A1A1A;
+  border-radius: 10px;
+  background-image: url(../img/images/logo-bg4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  p {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/images/18.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.access__title {
+  margin-top: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.access__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.access__btn {
+  width: 256px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 25px;
+}
