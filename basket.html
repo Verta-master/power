@@ -288,13 +288,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   
   <script>
-    $(window).scroll(function() {
-      if($(this).scrollTop() >= 100){
-        $('.shop__order').addClass('shop__order--top');
-      } else {
-        $('.shop__order').removeClass('shop__order--top');
-      }
-    });
+    if (window.innerWidth > 1025) {
+      $(window).scroll(function() {
+        if($(this).scrollTop() >= 100){
+          $('.shop__order').addClass('shop__order--top');
+        } else {
+          $('.shop__order').removeClass('shop__order--top');
+        }
+      });
+    }
   </script>
 </body>
 </html>
