@@ -2176,6 +2176,7 @@ h3 {
   margin-top: 10px;
   margin-bottom: 30px;
   width: 255px;
+  max-width: 100%;
 }
 .shop__field--wide {
   width: 677px;
@@ -2243,7 +2244,13 @@ h3 {
 }
 .shop__pic {
   width: 180px;
+  max-width: 180px;
   padding: 20px 25px;
+}
+.shop__img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 .shop__product {
   padding: 20px;
@@ -2309,4 +2316,85 @@ h3 {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+@media (max-width: 1200px) {
+  .shop__info {
+    width: 100%;
+  }
+  .shop__order {
+    position: static;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 766px) {
+  .shop__table,
+  .shop__table tbody,
+  .shop__table td {
+    display: block;
+  }
+  .shop__table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px;
+    padding: 20px 30px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .shop__remove,
+  .shop__price,
+  .shop__number,
+  .shop__product,
+  .shop__pic {
+    padding: 0;
+  }
+  .shop__product {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .shop__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .shop__radio-label {
+    margin-right: 0;
+  }
+  .shop__field {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .shop__block {
+    padding-bottom: 30px;
+  }
+  .shop__number .product__value {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .shop__price {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .shop__order {
+    width: 100%;
+  }
 }
